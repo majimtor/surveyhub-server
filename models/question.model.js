@@ -134,6 +134,10 @@ module.exports = (sequelize, Sequelize) => {
         Question.hasMany(models.questionoption, {
             foreignKey: 'questionId'
         });
+
+        Question.hasMany(models.answer, {
+            foreignKey: 'questionId'
+        });
     };
 
     return Question;

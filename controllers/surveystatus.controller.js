@@ -46,6 +46,41 @@ exports.findAll = (req, res) => {
         });
 };
 
+// Search for a SurveyStatus by status
+exports.findByName = (req, res) => {
+    // Get the status from the URL parameters
+    const statusName = req.params.status;
+
+    // Validate if a status was passed
+    if (!statusName) {
+        return res.status(400).send({
+            message: 'SurveyStatus status must be provided.'
+        });
+    }
+
+    // Perform search with LIKE operator (case insensitive search)
+    SurveyStatus.findAll({
+        where: {
+            status: {
+                [Op.like]: `%${statusName}%` // Partial match with LIKE
+            }
+        }
+    })
+        .then(data => {
+            if (data.length === 0) {
+                return res.status(404).send({
+                    message: `No SurveyStatus found with status ${statusName}.`
+                });
+            }
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: err.message || 'Some error occurred while retrieving the SurveyStatus.'
+            });
+        });
+};
+
 // Find a single SurveyStatus with an id
 exports.findOne = (req, res) => {
     const id = req.params.id;
@@ -71,7 +106,7 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
 
-    // Update updatedAt with current date and time only when the user is updated
+    // Update updatedAt with current date and time only when the SurveyStatus is updated
     req.body.updatedAt = new Date();
 
     SurveyStatus.update(req.body, {

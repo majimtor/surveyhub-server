@@ -49,7 +49,7 @@ exports.findAll = (req, res) => {
 };
 
 // Retrieve all QuestionOption from the database
-exports.findAllByQuestionId = (req, res) => {
+exports.findByQuestionId = (req, res) => {
     const id = req.params.id;
 
     QuestionOption.findAll({ where: { questionId: id } })
@@ -88,7 +88,7 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
 
-    // Update updatedAt with current date and time only when the user is updated
+    // Update updatedAt with current date and time only when the QuestionOption is updated
     req.body.updatedAt = new Date();
 
     QuestionOption.update(req.body, {
