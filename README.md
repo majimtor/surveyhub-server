@@ -6,8 +6,8 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.x-orange?style=for-the-badge&logo=mysql)
 ![JWT](https://img.shields.io/badge/JWT-Security-critical?style=for-the-badge&logo=jsonwebtokens)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)
-![Build Status](https://img.shields.io/github/actions/workflow/status/manuelalejandrojimeneztorres/surveyhub-server/backend-ci.yml?style=for-the-badge)
-![Coverage](https://img.shields.io/codecov/c/github/manuelalejandrojimeneztorres/surveyhub-server?style=for-the-badge)
+![Build Status](https://img.shields.io/github/actions/workflow/status/majimtor/surveyhub-server/backend-ci.yml?style=for-the-badge)
+![Coverage](https://img.shields.io/codecov/c/github/majimtor/surveyhub-server?style=for-the-badge)
 ![Dependencies](https://img.shields.io/badge/Dependencies-Up%20to%20date-brightgreen?style=for-the-badge)
 
 ## Description
@@ -86,7 +86,7 @@ Ensure the following tools are installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/manuelalejandrojimeneztorres/surveyhub-server.git
+   git clone https://github.com/majimtor/surveyhub-server.git
    ```
 
 2. Navigate to the project directory:
@@ -248,7 +248,7 @@ We welcome contributions to improve the SurveyHub Backend. To contribute:
 For support, contact:
 
 - **Email**: support@surveyhub.com
-- **Documentation**: [SurveyHub API Wiki](https://github.com/manuelalejandrojimeneztorres/surveyhub-server/wiki)
+- **Documentation**: [SurveyHub API Wiki](https://github.com/majimtor/surveyhub-server/wiki)
 
 [🔼 Back to Top](#table-of-contents)
 
@@ -274,7 +274,7 @@ Special thanks to:
 
 ---
 
-For more information, visit [SurveyHub Mobile](https://github.com/manuelalejandrojimeneztorres/surveyhub-mobile) or [SurveyHub Desktop](https://github.com/manuelalejandrojimeneztorres/surveyhub-desktop).
+For more information, visit [SurveyHub Mobile](https://github.com/majimtor/surveyhub-mobile) or [SurveyHub Desktop](https://github.com/majimtor/surveyhub-desktop).
 
 Enjoy using the **SurveyHub Backend** and feel free to contribute to its development! 🚀
 
